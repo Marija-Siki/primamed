@@ -2,7 +2,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {
   return (
-    <div className="bg-backgroundColor pl-10 text-white rounded-t-3xl mt-8 md:mt-0 lg:pl-0">
+    <div className="bg-backgroundColor pl-2 text-white rounded-t-3xl mt-8 md:mt-0 md:pl-10 lg:pl-0">
       <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 px-5">
         <div className=" w-full lg:w-1/4">
           <Link to="/#home" smooth>
@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className=" text-center py-4">
+        <p className="text-center py-4">
           <span className=" text-hoverColor">Primamed Fizio Centar 2024</span> |
           All rights reserved
         </p>

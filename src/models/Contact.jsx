@@ -1,5 +1,5 @@
 import Button from "../layouts/Button";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = ({ closeForm }) => {
@@ -10,6 +10,14 @@ const Contact = ({ closeForm }) => {
     userPhone: "",
   });
   const [successMessage, setSuccessMessage] = useState("");
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
 
   const validate = () => {
     const newErrors = {
@@ -127,7 +135,10 @@ const Contact = ({ closeForm }) => {
             <Button type="submit" title="Pošalji" />
             <button
               className="bg-backgroundColor text-white px-10 rounded-md active:bg-red-500"
-              onClick={closeForm}
+              onClick={() => {
+                closeForm();
+                document.body.style.overflow = "unset";
+              }}
             >
               Zatvori
             </button>

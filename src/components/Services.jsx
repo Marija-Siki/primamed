@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../layouts/Button";
 import ServicesCard from "../layouts/ServicesCard";
 import { Link } from "react-router-dom";
@@ -14,7 +14,6 @@ const massage = <img className="w-8 h-8" src="/massage.png" alt="masaza" />;
 const body = (
   <img className="w-8 h-8" src="/body.png" alt="fizikalna terapija" />
 );
-
 const neuro = (
   <img className="w-8 h-8" src="/neuro.png" alt="neuroloska rehabilitacija" />
 );
@@ -68,6 +67,18 @@ const Services = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isModalOpen]);
 
   const handleCardClick = (content) => {
     setModalContent(content);
