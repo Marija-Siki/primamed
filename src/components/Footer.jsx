@@ -8,7 +8,7 @@ const Footer = () => {
           <Link to="/#home" smooth>
             <img
               className="transition-all cursor-pointer lg:block w-60 my-10 lg:mx-auto"
-              src="/src/assets/img/logo.png"
+              src="/logo.png"
               alt="logo"
             />
           </Link>
@@ -34,17 +34,13 @@ const Footer = () => {
           <h1 className="font-medium text-xl pb-4 pt-10">Kontakt</h1>
           <div className="flex flex-col gap-2">
             <div className="flex flex-row">
-              <img
-                className="w-5 h-5 mr-3"
-                src="src/assets/img/icon_mail_.png"
-                alt="email"
-              />
+              <img className="w-5 h-5 mr-3" src="/icon_mail_.png" alt="email" />
               <span>primamedfizio@gmail.com</span>
             </div>
             <div className="flex flex-row">
               <img
                 className="w-5 h-5 mr-3"
-                src="src/assets/img/icon_whatsapp_.png"
+                src="/icon_whatsapp_.png"
                 alt="Kontakt telefon"
               />
               <span>061 119 72 72</span>
@@ -56,7 +52,7 @@ const Footer = () => {
             >
               <img
                 className="w-5 h-5 mr-3"
-                src="src/assets/img/icon_instagram_.png"
+                src="/icon_instagram_.png"
                 alt="instagram"
               />
               <span>primamed_fizio_centar</span>
@@ -68,7 +64,7 @@ const Footer = () => {
             >
               <img
                 className="w-5 h-5 mr-3"
-                src="src/assets/img/icon_facebook_.png"
+                src="/icon_facebook_.png"
                 alt="facebook"
               />
               <span>PrimaMed Fizio Centar</span>
@@ -76,7 +72,7 @@ const Footer = () => {
             <div className="flex flex-row">
               <img
                 className="w-5 h-5 mr-3"
-                src="src/assets/img/icon_pin_.png"
+                src="/icon_pin_.png"
                 alt="lokacija"
               />
               <span>Zmaj Jovina 55/7, Kragujevac</span>

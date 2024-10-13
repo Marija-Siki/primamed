@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex flex-row items-center cursor-pointer">
             <HashLink to="/#home" smooth>
               <div className="ml-0 w-36 h-14 -mt-2 mb-2 lg:ml-5">
-                <img src="/src/assets/img/logo.png" alt="logo" />
+                <img src="/logo.png" alt="logo" />
               </div>
             </HashLink>
           </div>

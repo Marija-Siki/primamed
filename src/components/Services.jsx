@@ -7,46 +7,26 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const dryNeedling = (
-  <img
-    className="w-8 h-8"
-    src="/src/assets/img/dryNeedling.png"
-    alt="dryNeedling"
-  />
+  <img className="w-8 h-8" src="/dryNeedling.png" alt="dryNeedling" />
 );
-const laser = (
-  <img className="w-8 h-8" src="/src/assets/img/laser.png" alt="laser" />
-);
-const massage = (
-  <img className="w-8 h-8" src="/src/assets/img/massage.png" alt="masaza" />
-);
+const laser = <img className="w-8 h-8" src="/laser.png" alt="laser" />;
+const massage = <img className="w-8 h-8" src="/massage.png" alt="masaza" />;
 const body = (
-  <img
-    className="w-8 h-8"
-    src="/src/assets/img/body.png"
-    alt="fizikalna terapija"
-  />
+  <img className="w-8 h-8" src="/body.png" alt="fizikalna terapija" />
 );
 
 const neuro = (
-  <img
-    className="w-8 h-8"
-    src="/src/assets/img/neuro.png"
-    alt="neuroloska rehabilitacija"
-  />
+  <img className="w-8 h-8" src="/neuro.png" alt="neuroloska rehabilitacija" />
 );
 const dailyTherapyPackage = (
   <img
     className="w-8 h-8"
-    src="/src/assets/img/dailyTherapyPackage.png"
+    src="/dailyTherapyPackage.png"
     alt="terapijski paket"
   />
 );
 const stretching = (
-  <img
-    className="w-8 h-8"
-    src="/src/assets/img/stretching.png"
-    alt="korektivna gimnastika"
-  />
+  <img className="w-8 h-8" src="/stretching.png" alt="korektivna gimnastika" />
 );
 
 const serviceDescriptions = {
@@ -204,11 +184,7 @@ const Services = () => {
             >
               <img
                 className="w-4 transition-transform duration-300"
-                src={
-                  isHovered
-                    ? "src/assets/img/x-hover.png"
-                    : "src/assets/img/x.png"
-                }
+                src={isHovered ? "/x-hover.png" : "/x.png"}
                 alt="Close"
               />
             </button>

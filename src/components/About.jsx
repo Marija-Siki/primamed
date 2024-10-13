@@ -52,7 +52,7 @@ const About = () => {
             })}
         className=" w-full lg:w-2/4"
       >
-        <img className="" src="src/assets/img/about.png" alt="about photo" />
+        <img className="" src="/about.png" alt="about photo" />
       </motion.div>
     </div>
   );

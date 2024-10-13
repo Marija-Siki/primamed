@@ -8,40 +8,40 @@ import { FaArrowRight } from "react-icons/fa";
 const Gallery = () => {
   const data = [
     {
-      img: "/src/assets/img/cekaonica.jpg",
+      img: "/cekaonica.jpg",
     },
     {
-      img: "/src/assets/img/kid.jpeg",
+      img: "/kid.jpeg",
     },
     {
-      img: "/src/assets/img/guest.jpeg",
+      img: "/guest.jpeg",
     },
     {
-      img: "/src/assets/img/vezbanje.jpeg",
+      img: "/vezbanje.jpeg",
     },
     {
-      img: "/src/assets/img/aparati.jpeg",
+      img: "/aparati.jpeg",
     },
     {
-      img: "/src/assets/img/laser.jpeg",
+      img: "/laser.jpeg",
     },
     {
-      img: "/src/assets/img/struja.jpeg",
+      img: "/struja.jpeg",
     },
     {
-      img: "/src/assets/img/sala.jpeg",
+      img: "/sala.jpeg",
     },
     {
-      img: "/src/assets/img/masaza.jpeg",
+      img: "/masaza.jpeg",
     },
     {
-      img: "/src/assets/img/ultrazvuk.jpeg",
+      img: "/ultrazvuk.jpeg",
     },
     {
-      img: "/src/assets/img/dryNeedling.jpeg",
+      img: "/dryNeedling.jpeg",
     },
     {
-      img: "/src/assets/img/zgrada.jpeg",
+      img: "/zgrada.jpeg",
     },
   ];
 
