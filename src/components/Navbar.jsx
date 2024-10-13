@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
-// import Button from "../layouts/Button";
+import { HashLink } from "react-router-hash-link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
 
@@ -26,66 +25,58 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full z-10 text-white">
+    <div className="fixed w-full text-white z-[999]">
       <div>
-        <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-black shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
-          <div className=" flex flex-row items-center cursor-pointer">
-            <Link to="home" spy={true} smooth={true} duration={500}>
-              <h1 className=" text-2xl font-semibold">PhysioClinic.</h1>
-            </Link>
+        <div className="flex flex-row justify-between p-5 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+          <div className="flex flex-row items-center cursor-pointer">
+            <HashLink to="/#home" smooth>
+              <div className="ml-0 w-36 h-14 -mt-2 mb-2 lg:ml-5">
+                <img src="/src/assets/img/logo.png" alt="logo" />
+              </div>
+            </HashLink>
           </div>
-
           <nav className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <HashLink
+              to="/#home"
+              smooth
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
               Početna
-            </Link>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
+            </HashLink>
+            <HashLink
+              to="/#about"
+              smooth
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
               O nama
-            </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
+            </HashLink>
+            <HashLink
+              to="/#services"
+              smooth
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
               Usluge
-            </Link>
-            <Link
-              to="doctors"
-              spy={true}
-              smooth={true}
-              duration={500}
+            </HashLink>
+            <HashLink
+              to="/#gallery"
+              smooth
               className=" hover:text-hoverColor transition-all cursor-pointer"
             >
-              Naš tim
-            </Link>
-            {/* <Link
-              to="blog"
-              spy={true}
-              smooth={true}
-              duration={500}
+              Galerija
+            </HashLink>
+            <HashLink
+              to="/prices"
+              smooth
               className=" hover:text-hoverColor transition-all cursor-pointer"
+              onClick={closeMenu}
             >
-              Blog
-            </Link> */}
+              Cenovnik
+            </HashLink>
           </nav>
 
           <div className=" hidden lg:flex">
             <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="mr-0 bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out lg:mr-5"
               onClick={openForm}
             >
               Kontakt
@@ -107,57 +98,46 @@ const Navbar = () => {
             menu ? "translate-x-0" : "-translate-x-full"
           } lg:hidden flex flex-col absolute bg-backgroundColor text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
+          <HashLink
+            to="/#home"
+            smooth
             className=" hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Pocetna
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
+          </HashLink>
+          <HashLink
+            to="/#about"
+            smooth
             className=" hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             O nama
-          </Link>
-          <Link
-            to="services"
-            spy={true}
-            smooth={true}
-            duration={500}
+          </HashLink>
+          <HashLink
+            to="/#services"
+            smooth
             className=" hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Usluge
-          </Link>
-          <Link
-            to="doctors"
-            spy={true}
-            smooth={true}
-            duration={500}
+          </HashLink>
+          <HashLink
+            to="/#gallery"
+            smooth
             className=" hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
-            Nas tim
-          </Link>
-          {/* <Link
-            to="blog"
-            spy={true}
-            smooth={true}
-            duration={500}
+            Galerija
+          </HashLink>
+          <HashLink
+            to="/prices"
+            smooth
             className=" hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
-            Blog
-          </Link> */}
-
+            Cenovnik
+          </HashLink>
           <div className=" lg:hidden">
             <button
               className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"

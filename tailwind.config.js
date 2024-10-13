@@ -6,8 +6,12 @@ export default {
       colors: {
         hoverColor: "#FFC000",
         brightColor: "#dd8036",
-        backgroundColor: "#36ae9a",
+        backgroundColor: "#393737",
       },
+    },
+    screens: {
+      'md': '640px',
+      'lg': '1280px',
     },
   },
   plugins: [],

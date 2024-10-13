@@ -5,37 +5,43 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-const Doctors = () => {
+const Gallery = () => {
   const data = [
     {
-      img: "/src/assets/img/doc2.jpg",
-      name: "Mirjana Stojanovic",
-      specialties: "Fizioterapeut",
+      img: "/src/assets/img/cekaonica.jpg",
     },
     {
-      img: "/src/assets/img/doc1.jpg",
-      name: "Dr. Milomir Jovanovic",
-      specialties: "Fizijatar",
+      img: "/src/assets/img/kid.jpeg",
     },
     {
-      img: "/src/assets/img/doc3.jpg",
-      name: "Dr. Ivan IVanovic",
-      specialties: "Opsta medicina",
+      img: "/src/assets/img/guest.jpeg",
     },
     {
-      img: "/src/assets/img/doc4.jpg",
-      name: "Milica Andric",
-      specialties: "Medicinska sestra",
+      img: "/src/assets/img/vezbanje.jpeg",
     },
     {
-      img: "/src/assets/img/doc5.jpg",
-      name: "Miloš Stojanović",
-      specialties: "Investitor",
+      img: "/src/assets/img/aparati.jpeg",
     },
     {
-      img: "/src/assets/img/doc6.jpg",
-      name: "Dr. Oliver Arsic",
-      specialties: "Deciji fizijatar",
+      img: "/src/assets/img/laser.jpeg",
+    },
+    {
+      img: "/src/assets/img/struja.jpeg",
+    },
+    {
+      img: "/src/assets/img/sala.jpeg",
+    },
+    {
+      img: "/src/assets/img/masaza.jpeg",
+    },
+    {
+      img: "/src/assets/img/ultrazvuk.jpeg",
+    },
+    {
+      img: "/src/assets/img/dryNeedling.jpeg",
+    },
+    {
+      img: "/src/assets/img/zgrada.jpeg",
     },
   ];
 
@@ -48,15 +54,15 @@ const Doctors = () => {
     speed: 500,
     arrows: false,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -65,6 +71,7 @@ const Doctors = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          dots: false,
         },
       },
       {
@@ -73,22 +80,19 @@ const Doctors = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+          dots: false,
         },
       },
     ],
   };
 
   return (
-    <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-6">
+    <div className="flex flex-col justify-center lg:px-32 px-5 pt-6 my-32 lg:my-0 lg:min-h-screen">
       <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
         <div>
           <h1 className=" text-4xl font-semibold text-center lg:text-start">
-            Naš tim
+            Galerija
           </h1>
-          <p className=" mt-2 text-center lg:text-start">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
-            quidem.
-          </p>
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
           <button
@@ -105,24 +109,16 @@ const Doctors = () => {
           </button>
         </div>
       </div>
-      <div className=" mt-5">
+      <div className="mt-5">
         <Slider ref={slider} {...settings}>
           {data.map((e, index) => (
-            <div
-              className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
-              key={index}
-            >
-              <div>
+            <div key={index}>
+              <div className="">
                 <img
                   src={e.img}
-                  alt="img"
-                  className=" h-56 rounded-t-xl w-full"
+                  alt="gallery"
+                  className="h-[300px] lg:h-[500px] object-cover rounded-xl w-full"
                 />
-              </div>
-
-              <div className=" flex flex-col justify-center items-center">
-                <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
-                <h3 className=" pt-2">{e.specialties}</h3>
               </div>
             </div>
           ))}
@@ -132,4 +128,4 @@ const Doctors = () => {
   );
 };
 
-export default Doctors;
+export default Gallery;
