@@ -119,7 +119,7 @@ const Services = () => {
                   viewport: { once: false, amount: 0.7 },
                 })}
           >
-            <Link to="/prices">
+            <Link to="/cenovnik">
               <Button title="Cenovnik" />
             </Link>
           </motion.div>

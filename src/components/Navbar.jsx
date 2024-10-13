@@ -45,35 +45,35 @@ const Navbar = () => {
           </div>
           <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
             <HashLink
-              to="/#home"
+              to="/#pocetna"
               smooth
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               Početna
             </HashLink>
             <HashLink
-              to="/#about"
+              to="/#o-nama"
               smooth
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               O nama
             </HashLink>
             <HashLink
-              to="/#services"
+              to="/#usluge"
               smooth
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               Usluge
             </HashLink>
             <HashLink
-              to="/#gallery"
+              to="/#galerija"
               smooth
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               Galerija
             </HashLink>
             <HashLink
-              to="/prices"
+              to="/cenovnik"
               smooth
               className="hover:text-hoverColor transition-all cursor-pointer"
               onClick={closeMenu}
@@ -107,7 +107,7 @@ const Navbar = () => {
           } lg:hidden mt-6 pb-10 overflow-auto max-h-[85vh] flex flex-col absolute bg-backgroundColor text-white left-0 top-16 font-semibold text-2xl text-center pt-8 gap-8 w-full h-fit transition-transform duration-300`}
         >
           <HashLink
-            to="/#home"
+            to="/#pocetna"
             smooth
             className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
@@ -115,7 +115,7 @@ const Navbar = () => {
             Pocetna
           </HashLink>
           <HashLink
-            to="/#about"
+            to="/#o-nama"
             smooth
             className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
@@ -123,7 +123,7 @@ const Navbar = () => {
             O nama
           </HashLink>
           <HashLink
-            to="/#services"
+            to="/#usluge"
             smooth
             className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
@@ -131,7 +131,7 @@ const Navbar = () => {
             Usluge
           </HashLink>
           <HashLink
-            to="/#gallery"
+            to="/#galerija"
             smooth
             className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
@@ -139,7 +139,7 @@ const Navbar = () => {
             Galerija
           </HashLink>
           <HashLink
-            to="/prices"
+            to="/cenovnik"
             smooth
             className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}

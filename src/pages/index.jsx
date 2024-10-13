@@ -6,19 +6,19 @@ import Gallery from "../components/Gallery";
 const Landing = () => {
   return (
     <>
-      <div id="home">
+      <div id="pocetna">
         <Home />
       </div>
 
-      <div id="about">
+      <div id="o-nama">
         <About />
       </div>
 
-      <div id="services">
+      <div id="usluge">
         <Services />
       </div>
 
-      <div id="gallery">
+      <div id="galerija">
         <Gallery />
       </div>
     </>

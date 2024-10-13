@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Prices from "./pages/prices";
+import Prices from "./pages/cenovnik";
 import Landing from "./pages/index";
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/prices" element={<Prices />} />
+            <Route path="/cenovnik" element={<Prices />} />
           </Routes>
         </main>
         <Footer />
