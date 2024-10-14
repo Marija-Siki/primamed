@@ -28,3 +28,8 @@
   color: #888;
 }
 
+.no-highlight {
+  outline: none;
+  box-shadow: none;
+}
+
