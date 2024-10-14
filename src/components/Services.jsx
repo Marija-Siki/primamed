@@ -118,6 +118,7 @@ const Services = () => {
                   whileInView: "show",
                   viewport: { once: false, amount: 0.7 },
                 })}
+            className="hidden lg:block"
           >
             <Link to="/cenovnik">
               <Button title="Cenovnik" />
@@ -175,6 +176,9 @@ const Services = () => {
             }
           />
         </div>
+        <Link className="lg:hidden mx-auto mt-10" to="/cenovnik">
+          <Button title="Cenovnik" />
+        </Link>
       </div>
       {isModalOpen && (
         <div

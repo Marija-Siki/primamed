@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="bg-backgroundColor pl-2 text-white rounded-t-3xl mt-8 md:mt-0 md:pl-10 lg:pl-0">
       <div className="flex flex-col lg:flex-row justify-between p-8 lg:px-32 px-5">
         <div className=" w-full lg:w-1/4">
-          <Link to="/#home" smooth>
+          <Link to="/#pocetna" smooth>
             <img
               className="transition-all cursor-pointer lg:block w-60 my-10 lg:mx-auto"
               src="/logo.png"

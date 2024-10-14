@@ -112,7 +112,7 @@ const Navbar = () => {
             className="hover:text-hoverColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
-            Pocetna
+            Početna
           </HashLink>
           <HashLink
             to="/#o-nama"
