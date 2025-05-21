@@ -93,7 +93,7 @@ const Footer = () => {
       </div>
       <div>
         <p className="text-center py-4">
-          <span className=" text-hoverColor">Primamed Fizio Centar 2024</span> |
+          <span className=" text-hoverColor">Primamed Fizio Centar 2025</span> |
           All rights reserved
         </p>
       </div>
