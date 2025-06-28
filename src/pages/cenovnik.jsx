@@ -32,9 +32,8 @@ const services = [
     subtitle: "(elektro th 2 procedure + laser / UZ / magnet)",
   },
   {
-    name: "Fizikalna terapija",
+    name: "Fizikalna terapija + dry needling / masaža 30 minuta",
     price: 2400,
-    subtitle: "(+ dry needling / masaža 30 minuta)",
   },
   { name: "Kineziterapija", price: 1500 },
   {
