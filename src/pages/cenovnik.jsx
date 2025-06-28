@@ -14,22 +14,27 @@ const services = [
   {
     name: "Laseroterapija",
     price: 900,
-    subtitle: " 1 procedura",
+    subtitle: "1 procedura",
   },
   {
     name: "Magnetoterapija",
     price: 900,
-    subtitle: " 1 procedura",
+    subtitle: "1 procedura",
   },
   {
     name: "Kombinovana terapija 1",
     price: 1500,
-    subtitle: "(elektro th + laser/UZ)",
+    subtitle: "(elektro th + laser / UZ)",
   },
   {
     name: "Kombinovana terapija 2",
     price: 2200,
-    subtitle: "(elektro th + laser/UZ + magnet)",
+    subtitle: "(elektro th 2 procedure + laser / UZ / magnet)",
+  },
+  {
+    name: "Fizikalna terapija",
+    price: 2400,
+    subtitle: "(+ dry needling / masaža 30 minuta)",
   },
   { name: "Kineziterapija", price: 1500 },
   {
@@ -41,14 +46,14 @@ const services = [
     price: 3500,
   },
   {
-    name: "Korektivna gimnastika ODRASLI (grupno)",
+    name: "Korektivna gimnastika ODRASLI (grupni trening)",
     price: 3500,
   },
   { name: "Dry needling", price: 1500 },
   {
     name: "Dnevni terapijski paket",
     price: 3200,
-    subtitle: "(elektro th + kinezi + dry needling/masaža)",
+    subtitle: "(elektro th + kinezi + dry needling / masaža)",
   },
   {
     name: "Neurološka rehabilitacija",
@@ -56,15 +61,27 @@ const services = [
   },
   {
     name: "Terapeutska masaža (30 minuta)",
-    price: 1500,
+    price: 1600,
   },
   {
     name: "Relax masaža (30 minuta)",
     price: 1200,
   },
   {
-    name: "Relax masaža (45 minuta)",
-    price: 1800,
+    name: "Terapeutska masaža (45 minuta)",
+    price: 2200,
+  },
+  {
+    name: "Terapeutska masaža (60 minuta)",
+    price: 2800,
+  },
+  {
+    name: "Pregled",
+    price: 4000,
+  },
+  {
+    name: "Kontrolni pregled",
+    price: 2000,
   },
 ];
 

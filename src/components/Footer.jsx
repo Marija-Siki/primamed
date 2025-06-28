@@ -21,7 +21,7 @@ const Footer = () => {
         <div>
           <h1 className="font-medium text-xl pb-4 pt-10">Usluge</h1>
           <ul>
-            <li className="pb-1">Fizikalna teraija</li>
+            <li className="pb-1">Fizikalna terapija</li>
             <li className="pb-1">Kombinovane terapije</li>
             <li className="pb-1">Korektivna gimnastika</li>
             <li className="pb-1">Dry Needling</li>
