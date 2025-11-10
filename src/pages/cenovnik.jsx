@@ -31,10 +31,6 @@ const services = [
     price: 2200,
     subtitle: "(elektro th 2 procedure + laser / UZ / magnet)",
   },
-  {
-    name: "Fizikalna terapija + dry needling / masaža 30 minuta",
-    price: 2400,
-  },
   { name: "Kineziterapija", price: 1500 },
   {
     name: "Korektivna gimnastika dece (individualan trening)",
@@ -46,7 +42,7 @@ const services = [
   },
   {
     name: "Korektivna gimnastika ODRASLI (grupni trening)",
-    price: 3500,
+    price: 4000,
   },
   { name: "Dry needling", price: 1500 },
   {
